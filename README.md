@@ -1,5 +1,5 @@
-# CSV-search
-## FastAPI service to query a CSV file* 
+# Fast-CSV-Search
+## (Really FAST) FastAPI service to query a CSV file* 
 #### * - (any CSV that has the column names defined as first line)
 
 ```
