@@ -1,5 +1,6 @@
-# dct-search
-Simple FastAPI service for Driver Compatibility Table (List) Searching 
+# scv-search
+FastAPI service to query a CSV file (any CSV that has the column names defined as first line)
+This was created as _Simple FastAPI service for Driver Compatibility Table (List) Searching_
 ```
 $ uvicorn app:app --reload
 
