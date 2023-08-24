@@ -19,20 +19,31 @@ $ (Fast-CSV-Search) ➜  compatlist_search-fastapi wc -l file.csv
 ```
 $ (Fast-CSV-Search) ➜ uvicorn app:app --reload
 
-INFO:     Started server process [60041]
+INFO:     Started server process [61197]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
-PERF:	  Query served in 0.011279 seconds
-INFO:     127.0.0.1:49992 - "GET /search/?query=111 HTTP/1.1" 200 OK
-PERF:	  Query served in 0.008723 seconds
-INFO:     127.0.0.1:49992 - "GET /search/?query=115 HTTP/1.1" 200 OK
-PERF:	  Query served in 0.007777 seconds
-INFO:     127.0.0.1:49994 - "GET /search/?query=111 HTTP/1.1" 200 OK
-PERF:	  Query served in 0.059983 seconds
-INFO:     127.0.0.1:49994 - "GET /search/?query= HTTP/1.1" 200 OK
-PERF:	  Query served in 0.026290 seconds
-INFO:     127.0.0.1:49997 - "GET /search/?query=adapter HTTP/1.1" 200 OK
+PERF:	  Query served in 42.6 miliseconds
+INFO:     127.0.0.1:50519 - "GET /search/?query= HTTP/1.1" 200 OK
+PERF:	  Query served in 39.0 miliseconds
+INFO:     127.0.0.1:50519 - "GET /search/?query= HTTP/1.1" 200 OK
+PERF:	  Query served in 48.7 miliseconds
+INFO:     127.0.0.1:50519 - "GET /search/?query= HTTP/1.1" 200 OK
+PERF:	  Query served in 12.1 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=112 HTTP/1.1" 200 OK
+PERF:	  Query served in 9.3 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=111 HTTP/1.1" 200 OK
+PERF:	  Query served in 8.7 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=112 HTTP/1.1" 200 OK
+PERF:	  Query served in 8.1 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=111 HTTP/1.1" 200 OK
+PERF:	  Query served in 15.1 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=11 HTTP/1.1" 200 OK
+PERF:	  Query served in 6.7 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=111 HTTP/1.1" 200 OK
+PERF:	  Query served in 39.9 miliseconds
+INFO:     127.0.0.1:50523 - "GET /search/?query=1 HTTP/1.1" 200 OK
 ```
+```(queries above: '', '', '', '112', '111, '111, '11', '111', '1')```
 
 #### Example HTTP reply:
 
